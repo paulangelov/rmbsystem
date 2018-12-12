@@ -9,6 +9,13 @@
 					<span class="login100-form-title p-b-26">
 						Welcome, Guest
 					</span>
+					
+					@if($errors->any())
+						<span>
+							<p align="center">{{$errors->first()}}</p>
+						</span>
+					@endif
+					
 					<span class="login100-form-title p-b-48">
 						<i class="zmdi zmdi-font"></i>
 					</span>
@@ -18,8 +25,7 @@
 					@endif
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid Account ID: 12****78">
-						<input class="input100" type="text" name="accountid" id="accountid" placeholder="Account ID">
-						
+						<input class="input100" type="text" name="accountid" id="accountid" placeholder="Account ID" value="{{ old('accountid') }}">
 					</div>	
 
 					@if($errors->has('password'))

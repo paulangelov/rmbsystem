@@ -15,8 +15,12 @@ Route::get('/', function () {
     return view('pages.login');
 });
 
-Route::get('/home', function () {
-    return view('pages.admin-home');
-});
+Route::post('/sign-in', 'LoginCtrl@login');
 
-Route::post('/sign-in', 'LoginCtrl@index');
+Route::group(['middleware' => ['checkusersession']], function(){
+
+    Route::get('/home', function () {
+        return view('pages.admin-home');
+    });
+
+});

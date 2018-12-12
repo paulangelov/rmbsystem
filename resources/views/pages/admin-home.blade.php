@@ -1,5 +1,11 @@
 <!-- Header -->
 @include('layouts.admin-header')
+@if(Session::has('session'))
+    @foreach($test = Session::get('session') as $sess)
+        {{$sess->RMBACCNTID}}
+    @endforeach
+@endif
+
 
 <body class="animsition">
     <div class="page-wrapper">
