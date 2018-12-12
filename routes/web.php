@@ -15,11 +15,11 @@ Route::get('/', function () {
     return view('pages.login');
 });
 
-Route::post('/sign-in', 'LoginCtrl@login'); //form-login
+Route::post('sign-in', 'LoginCtrl@login'); //form-login
 
 Route::get('sign-out', 'LoginCtrl@logout'); //logout
 
-Route::group(['middleware' => ['checkusersession']], function(){
+Route::group(['middleware' => ['checkusersession']], function(){ //session middleware
 
     Route::get('/home', function () {
         return view('pages.admin-home');

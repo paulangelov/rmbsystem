@@ -446,6 +446,7 @@ class ComposerStaticInit91f885ebaf32e467765ce68c00a23da4
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/LoginRequest.php',
         'App\\Models\\MdlRMBACCOUNTS' => __DIR__ . '/../..' . '/app/Models/MdlRMBACCOUNTS.php',
+        'App\\Models\\MdlRMBACCOUNTS_SESS' => __DIR__ . '/../..' . '/app/Models/MdlRMBACCOUNTS_SESS.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',

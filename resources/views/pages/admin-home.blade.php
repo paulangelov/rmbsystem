@@ -1,11 +1,5 @@
 <!-- Header -->
 @include('layouts.admin-header')
-@if(Session::has('session'))
-    @foreach($test = Session::get('session') as $sess)
-        {{$sess->RMBACCNTID}}
-    @endforeach
-@endif
-
 
 <body class="animsition">
     <div class="page-wrapper">
@@ -21,9 +15,14 @@
                     <div class="image img-cir img-120">
                         <img src="images/icon/avatar-big-01.jpg" alt="John Doe" />
                     </div>
-                    <h4 class="name">john doe</h4>
-                    <a href="{{url('sign-out')}}">Sign out</a>
+                    <h4 class="name"> 
+                        @foreach(Session::get('session') as $sess)
+                            {{ $sess->RMBACCNTFNAME }}
+                        @endforeach
+                    </h4>
+                    <a href="{{ url('sign-out') }}">Sign out</a>
                 </div>
+
                 <nav class="navbar-sidebar2">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
