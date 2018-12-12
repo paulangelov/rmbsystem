@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('pages.login');
 });
 
-Route::post('/sign-in', 'LoginCtrl@login');
+Route::post('/sign-in', 'LoginCtrl@login'); //form-login
+
+Route::get('sign-out', 'LoginCtrl@logout'); //logout
 
 Route::group(['middleware' => ['checkusersession']], function(){
 

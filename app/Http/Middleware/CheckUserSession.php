@@ -15,7 +15,7 @@ class CheckUserSession
      */
     public function handle($request, Closure $next)
     {
-        if($request->session()->get('session') === NULL){
+        if(!$request->session()->has('session')){
             return redirect('/');
         }
 
