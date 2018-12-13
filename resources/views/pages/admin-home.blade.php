@@ -31,10 +31,14 @@
                             <a href="{{url('home')}}">
                                 <i class="fas fa-home"></i>Home</a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-user"></i>Accounts</a>
-                        </li>
+                        @foreach(Session::get('session') as $sess)
+                            @if($sess->RMBACCNTTYPE != 0)
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-user"></i>Accounts</a>
+                                </li>
+                            @endif
+                        @endforeach
                         <li>
                             <a href="#">
                             <i class="fas fa-users"></i>Students</a>
@@ -175,6 +179,14 @@
                                 <a href="{{url('home')}}">
                                     <i class="fas fa-home"></i>Home</a>
                             </li>
+                            @foreach(Session::get('session') as $sess)
+                                @if($sess->RMBACCNTTYPE != 0)
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-user"></i>Accounts</a>
+                                    </li>
+                                @endif
+                            @endforeach
                             <li>
                                 <a href="#">
                                     <i class="fas fa-users"></i>Students</a>
