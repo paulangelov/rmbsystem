@@ -39,6 +39,10 @@
                             <a href="#">
                             <i class="fas fa-users"></i>Students</a>
                         </li>
+                        <li>
+                            <a href="#">
+                            <i class="fas fa-female"></i>Teachers</a>
+                        </li>
                         <li class="has-sub">
                                 <a class="js-arrow" href="#">
                                     <i class="fas fa-level-up-alt"></i>Level
@@ -69,10 +73,6 @@
                                     </li>
                                 </ul>
                         </li>
-                        <li>
-                            <a href="#">
-                            <i class="fas fa-female"></i>Teachers</a>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -92,17 +92,7 @@
                                 </a>
                             </div>
                             <div class="header-button2">
-                                <div class="header-button-item js-item-menu">
-                                    <i class="zmdi zmdi-search"></i>
-                                    <div class="search-dropdown js-dropdown">
-                                        <form action="">
-                                            <input class="au-input au-input--full au-input--h65" type="text" placeholder="Search for datas &amp; reports..." />
-                                            <span class="search-dropdown__icon">
-                                                <i class="zmdi zmdi-search"></i>
-                                            </span>
-                                        </form>
-                                    </div>
-                                </div>
+                                
                                 <div class="header-button-item has-noti js-item-menu">
                                     <i class="zmdi zmdi-notifications"></i>
                                     <div class="notifi-dropdown js-dropdown">
@@ -148,7 +138,7 @@
                                     <div class="account-dropdown__body">
                                         <div class="account-dropdown__item">
                                             <a href="#">
-                                                <i class="zmdi zmdi-account"></i>Account</a>
+                                                <i class="zmdi zmdi-account"></i>My Account</a>
                                         </div>
                                         <div class="account-dropdown__item">
                                             <a href="#">
@@ -189,6 +179,10 @@
                                 <a href="#">
                                     <i class="fas fa-users"></i>Students</a>
                             </li>
+                            <li>
+                                <a href="#">
+                                <i class="fas fa-female"></i>Teachers</a>
+                            </li>
                             <li class="has-sub">
                                     <a class="js-arrow" href="#">
                                         <i class="fas fa-level-up-alt"></i>Level
@@ -201,7 +195,7 @@
                                             <a href="#">
                                                 <i class="fas fa-child"></i>Pre-school
                                             </a>
-                                            /li>
+                                        </li>
                                         <li>
                                             <a href="#">
                                                 <i class="fas fa-child"></i>Kindergarten
@@ -221,16 +215,12 @@
                                 </li>
                                 <li>
                                     <a href="#">
-                                    <i class="fas fa-female"></i>Teachers</a>
+                                    <i class="fas fa-user"></i>My Account</a>
                                 </li>
-                            <li>
-                                <a href="#">
-                                <i class="fas fa-user"></i>My Account</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                 <i class="zmdi zmdi-settings"></i>Settings</a>
-                            </li>
+                                <li>
+                                    <a href="#">
+                                    <i class="zmdi zmdi-settings"></i>Settings</a>
+                                </li>
                         </ul>
                     </nav>
                 </div>
@@ -271,37 +261,19 @@
                         <div class="row">
                             <div class="col-md-6 col-lg-3">
                                 <div class="statistic__item">
-                                    <h2 class="number">10,368</h2>
-                                    <span class="desc">members online</span>
+                                    <h2 class="number">10</h2>
+                                    <span class="desc">total teachers</span>
                                     <div class="icon">
-                                        <i class="zmdi zmdi-account-o"></i>
+                                        <i class="zmdi zmdi-male-female"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3">
                                 <div class="statistic__item">
-                                    <h2 class="number">388,688</h2>
-                                    <span class="desc">items sold</span>
+                                    <h2 class="number">50</h2>
+                                    <span class="desc">total students</span>
                                     <div class="icon">
-                                        <i class="zmdi zmdi-shopping-cart"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="statistic__item">
-                                    <h2 class="number">1,086</h2>
-                                    <span class="desc">this week</span>
-                                    <div class="icon">
-                                        <i class="zmdi zmdi-calendar-note"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="statistic__item">
-                                    <h2 class="number">$1,060,386</h2>
-                                    <span class="desc">total earnings</span>
-                                    <div class="icon">
-                                        <i class="zmdi zmdi-money"></i>
+                                        <i class="zmdi zmdi-accounts"></i>
                                     </div>
                                 </div>
                             </div>
