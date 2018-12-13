@@ -187,6 +187,44 @@
                             </li>
                             <li>
                                 <a href="#">
+                                    <i class="fas fa-users"></i>Students</a>
+                            </li>
+                            <li class="has-sub">
+                                    <a class="js-arrow" href="#">
+                                        <i class="fas fa-level-up-alt"></i>Level
+                                        <span class="arrow">
+                                            <i class="fas fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-child"></i>Pre-school
+                                            </a>
+                                            /li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-child"></i>Kindergarten
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-child"></i>Graders
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-child"></i>Highschool
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i class="fas fa-female"></i>Teachers</a>
+                                </li>
+                            <li>
+                                <a href="#">
                                 <i class="fas fa-user"></i>My Account</a>
                             </li>
                             <li>
