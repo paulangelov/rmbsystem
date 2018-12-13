@@ -28,13 +28,17 @@
                     <ul class="list-unstyled navbar__list">
                         
                         <li class="active">
-                            <a href="inbox.html">
-                                <i class="fas fa-chart-bar"></i>Link</a>
+                            <a href="{{url('home')}}">
+                                <i class="fas fa-home"></i>Home</a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fas fa-shopping-basket"></i>Link</a>
+                                <i class="fas fa-user"></i>Accounts</a>
                         </li>
+                        <li>
+                                <a href="#">
+                                    <i class="fas fa-users"></i>Students</a>
+                            </li>
                     </ul>
                 </nav>
             </div>
@@ -144,12 +148,16 @@
                     <nav class="navbar-sidebar2">
                         <ul class="list-unstyled navbar__list">
                             <li>
-                                <a href="inbox.html">
-                                    <i class="fas fa-chart-bar"></i>Link</a>
+                                <a href="{{url('home')}}">
+                                    <i class="fas fa-home"></i>Home</a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fas fa-shopping-basket"></i>Link</a>
+                                <i class="fas fa-user"></i>My Account</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                 <i class="zmdi zmdi-settings"></i>Settings</a>
                             </li>
                         </ul>
                     </nav>
@@ -168,7 +176,7 @@
 
                                         <ul class="list-unstyled list-inline au-breadcrumb__list">
                                             <li class="list-inline-item active">
-                                                <a href="#">Home</a>
+                                                <a href="{{url('home')}}">Home</a>
                                             </li>
                                             <li class="list-inline-item seprate">
                                                 <span>/</span>
@@ -244,7 +252,7 @@
                 </div>
             </section>
             <!-- END PAGE FOOTER -->
-            
+
             <!-- END PAGE CONTAINER-->
         </div>
 
