@@ -4,12 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\MdlRMBACCOUNTS; //model-DB
-use App\Models\MdlRMBACCOUNTS_SESS;
+//DBModels
+use App\Models\MdlRMBACCOUNTS; 
+use App\Models\MdlRMBACCOUNTS_SESS; 
 
-use Session; //session
+//Validator
+use App\Http\Requests\LoginRequest;
 
-use App\Http\Requests\LoginRequest; //validator
+//Session
+use Session;
+//Date--Carbon
+use Carbon;
 
 class LoginCtrl extends Controller
 {
@@ -23,15 +28,16 @@ class LoginCtrl extends Controller
                     ->count();
 
         if($checkuser > 0){
+            //insert user account info in session
             $sess = MdlRMBACCOUNTS::where('RMBACCNTID', $request->accountid)->get();
             $request->session()->put('session', $sess);
 
-            /* MdlRMBACCOUNTS_SESS::create([
-                $SESS_ACCNTID => $accountid,
-                $SESS_IPADD => request()->ip(),
-                $SESS_AGENT => $request->server('HTTP_USER_AGENT'),
-                $SESS_LASTACTIVITY => GETDATE()
-            ]); */
+            //session logs
+            MdlRMBACCOUNTS_SESS::create([
+                'SESS_ACCNTID' => $accountid,
+                'SESS_IPADD' => request()->ip(),
+                'SESS_AGENT' => $request->server('HTTP_USER_AGENT')
+            ]); 
             
             return redirect('/home');
         }

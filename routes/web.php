@@ -12,11 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('pages.login');
+    if(!Session::has('session')){
+        return view('pages.login');
+    }
+    else{
+        return redirect('/home');
+    }
 });
 
 Route::post('sign-in', 'LoginCtrl@login'); //form-login
-
 Route::get('sign-out', 'LoginCtrl@logout'); //logout
 
 Route::group(['middleware' => ['checkusersession']], function(){ //session middleware

@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Session;
 
 class CheckUserSession
 {
@@ -15,7 +16,7 @@ class CheckUserSession
      */
     public function handle($request, Closure $next)
     {
-        if(!$request->session()->has('session')){
+        if(!Session::has('session')){
             return redirect('/');
         }
 
