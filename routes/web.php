@@ -29,4 +29,6 @@ Route::group(['middleware' => ['checkusersession']], function(){ //session middl
         return view('pages.admin-home');
     });
 
+    Route::get('accounts', 'AccountsCtrl@index');
+
 });

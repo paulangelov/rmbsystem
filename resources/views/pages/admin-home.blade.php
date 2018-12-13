@@ -34,7 +34,7 @@
                         @foreach(Session::get('session') as $sess)
                             @if($sess->RMBACCNTTYPE != 0)
                                 <li>
-                                    <a href="#">
+                                    <a href="{{url('accounts')}}">
                                         <i class="fas fa-user"></i>Accounts</a>
                                 </li>
                             @endif
