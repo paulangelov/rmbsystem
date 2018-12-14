@@ -58,4 +58,4 @@
 	<div id="dropDownSelect1"></div>
 	
 <!-- Footer -->
-@include('layouts.admin-footer')
+@include('layouts.login-footer')
